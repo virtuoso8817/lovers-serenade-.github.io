@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To the infinity and beyond</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  margin: 0;
+ 
+ font-family:Times New Roman;
+  font-style:italic;
+  font-size: 17px;
+
+
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <!--<audio controls autoplay loop><source src="lana.mp3">/audio>-->
+    <!--<embed src="lana.mp3" loop ="true" autostart="true" width="2" height="0"></embed>-->
+
+<video autoplay loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!--audio autoplay loop id="myaudio">
+        <source src="C:\Users\Om Aditya\Downloads\Until I Found You (Em Beihold Version) (320 kbps).mp3" type="audio/mpeg">
+    </audio>-->
+
+
+<div class="content">
+  <h1 id="Arooshi">
+  </h1>
+ <script src= "arsh.js"
+
+ ></script> 
+ <!--
+  <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?si=6NZDY2WAQweWvcoGuX2Yxw">
+  <img src="arsh.jpg"></body></a>-->
+  <p><p>Your presence seems too good to be true<br>
+Your smile lights up my dull days<br>
+Your replies seems to be a water splash.<br>
+ in the dry and scorching heat.<br>
+Your aura so welcoming, your beauty so enchanting<br>
+ enough to baffle me about God’s own impeccable creation.<br>
+You are a ray in the twilight,<br>
+ ebullient and effulgent.<br>
+Waves in the everlasting somber ocean.<br>
+Your beauty seems ethereal like<br>
+ the glimmering stars in the night.<br>
+ Your jaunty vibe like the sea breeze in the azure sky  <br>    
+And clear sand.<br>
+Embossed, engraved in my heart.<br>
+Like a beautiful flower in a desolate land.<br>
+You are like a fortress, impregnable and sturdy<br>
+On the outside but <br>
+ magnificent and grand on the inside.<br>
+You are like a little snow flake or the first drop of rain<br>
+Fallen from above to alleviate all pain.<br>
+May our bond withstand the tempest of time.<br>
+May this moment freeze ,  let this moment be mine.
+</p></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+var song = new Audio('song2.mp3');
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+  btn.addEventListener('click', ()=>{
+    song.play();
+})
+}
+</script>
+
+</body>
+</html>
