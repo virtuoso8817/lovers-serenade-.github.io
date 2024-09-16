@@ -1,1 +1,1 @@
-# ashi.github.io
+# live and let live
