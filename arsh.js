@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('Arooshi')
-const phrases=["Dedicated to ","The special one","Arooshi Sharma"]
+const phrases=["Dedicated to ","The special one","My love"]
 let i=0
 let j=0
 let currentPhrase=[]
