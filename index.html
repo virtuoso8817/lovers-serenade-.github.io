@@ -114,12 +114,21 @@ var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 var song = new Audio('song2.mp3');
 
+window.onload = function() {
+  video.play();
+  song.play();
+  btn.innerHTML = "Pause"; 
+}
+  
+
 function myFunction() {
   if (video.paused) {
     video.play();
+    song.play();
     btn.innerHTML = "Pause";
   } else {
     video.pause();
+    song.pause();
     btn.innerHTML = "Play";
   }
   btn.addEventListener('click', ()=>{
